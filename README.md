@@ -40,18 +40,46 @@ Une application React qui affiche les universités du Sénégal :
 ![University App Desktop](/captures/univs.png)
 *Vue  de l'application University*
 
+### 3. Cars App (/cars-app)
 
+#### Frontend (/cars-app)
+
+Une application React qui affiche les voitures par requête api springboot :
+- Informations sur la voitures
+- Informations sur le propriétaire
+- Interface responsive avec des cartes
+- Données provenant de l'API : [http://](http://localhost:8080/api/cars)
+
+#### Capture d'écran Cars App
+
+
+![University App Desktop](/captures/cars.png)
+*Vue  de l'application Cars*
+
+#### Backend (/sb-car-2)
+
+Une application SpringBoot qui permet d'ajouter des voitures et leurs propriétaires et de récupérer la liste des voitures :
+- Informations sur la voitures
+- Informations sur le propriétaire
+- Interface responsive avec des cartes
+
+#### Capture d'écran ConsoleH2
+
+
+![University App Desktop](/captures/carsConsoleH2.png)
+*Vue  du ConsoleH2 Cars*
 
 ## Technologies Utilisées
 
 - React
 - Tailwind CSS
+- SpringBoot
 - React Icons
 - Fetch API
 
 ## Installation et Démarrage
 
-Pour chaque application (/movies-app ou /univ-app) :
+Pour chaque application (/movies-app ou /univ-app ou cars-app) :
 
 ```bash
 # Installation des dépendances
@@ -62,6 +90,16 @@ npm install
 npm run dev
 ```
 
+Pour chaque application springboot (/sb-car-2) :
+
+```bash
+# Installation des dépendances
+cd [nom-app]
+
+# Démarrage du serveur de développement
+./gradlew clean
+./gradlew bootRun
+```
 ## Fonctionnalités Communes
 
 - Design responsive
